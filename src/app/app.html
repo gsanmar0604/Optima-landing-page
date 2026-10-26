@@ -37,5 +37,30 @@
     </div>
   </section>
 
+  <section class="section" aria-labelledby="servicios">
+    <h2 id="servicios" class="section__title">{{ site.services.titulo }}</h2>
+    <ul class="cards">
+      @for (servicio of site.services.lista; track servicio.titulo) {
+        <li class="card">
+          <h3 class="card__title">{{ servicio.titulo }}</h3>
+          <p class="card__text">{{ servicio.texto }}</p>
+        </li>
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="pasos">
+    <h2 id="pasos" class="section__title">{{ site.steps.titulo }}</h2>
+    <ol class="cards">
+      @for (paso of site.steps.lista; track paso.titulo) {
+        <li class="card">
+          <span class="card__number" aria-hidden="true">{{ $index + 1 }}</span>
+          <h3 class="card__title">{{ paso.titulo }}</h3>
+          <p class="card__text">{{ paso.texto }}</p>
+        </li>
+      }
+    </ol>
+  </section>
+
   <footer class="footer">© {{ year }} {{ site.name }}</footer>
 </main>

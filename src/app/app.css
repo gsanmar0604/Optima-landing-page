@@ -1,12 +1,15 @@
 .page {
-  min-height: 100svh;
   display: grid;
-  grid-template-rows: 1fr auto;
+  gap: clamp(4rem, 10vw, 7rem);
   padding: clamp(1.5rem, 6vw, 4.5rem);
 }
 
+/* El bloque principal ocupa casi toda la primera pantalla; las secciones aparecen al bajar. */
 .hero {
-  align-self: center;
+  min-height: 75svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   justify-self: center;
   max-width: 46rem;
   text-align: center;
@@ -100,8 +103,62 @@
   outline-offset: 3px;
 }
 
+.section {
+  justify-self: center;
+  width: 100%;
+  max-width: 64rem;
+  text-align: center;
+}
+
+.section__title {
+  margin: 0;
+  font-family: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+  margin: clamp(1.5rem, 4vw, 2.5rem) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 1.75rem 1.5rem;
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--fg) 4%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--fg) 10%, transparent);
+}
+
+.card__number {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-fg);
+  font-weight: 700;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.card__text {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
 .footer {
-  padding-top: 2rem;
   text-align: center;
   font-size: 0.8125rem;
   color: var(--muted);

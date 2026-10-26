@@ -1,6 +1,6 @@
 import content from '../content.json';
 
-// El eslogan y la explicación se editan en src/content.json.
+// Los textos (eslogan, explicación, servicios y pasos) se editan en src/content.json.
 // 'explicacion' puede ser un texto o una lista de textos (un párrafo por elemento).
 const explicacion: string | string[] = content.explicacion;
 
@@ -14,6 +14,8 @@ export const SITE = {
   paragraphs: (Array.isArray(explicacion) ? explicacion : [explicacion])
     .map((parrafo) => parrafo.trim())
     .filter((parrafo) => parrafo.length > 0),
+  services: content.servicios,
+  steps: content.pasos,
 
   // Rutas RELATIVAS al logo, dentro de la carpeta public/. Sin barra inicial.
   // La versión "reversed" es la del kit de marca para fondos oscuros (modo oscuro).

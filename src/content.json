@@ -4,5 +4,45 @@
   "explicacion": [
     "Hoy en día, todas las empresas cuentan con infraestructura con Inteligencia Artificial integrada. Evita ser último en modernizarte con Optima.",
     "Si no quieres quedarte atrás de la competencia, contacta con nosotros. Tan solo pide y nosotros lo realizaremos. No necesitas infraestructura ni conocimientos, todo eso lo aportamos nosotros."
-  ]
+  ],
+
+  "servicios": {
+    "titulo": "Qué podemos hacer por ti",
+    "lista": [
+      {
+        "titulo": "Atención al cliente 24/7",
+        "texto": "Un asistente que responde a tus clientes por WhatsApp o en tu web, a cualquier hora."
+      },
+      {
+        "titulo": "Adiós a las tareas repetitivas",
+        "texto": "Automatizamos facturas, correos e informes para que tu equipo se dedique a lo importante."
+      },
+      {
+        "titulo": "Tus documentos, al instante",
+        "texto": "Un asistente que encuentra y resume la información de los documentos de tu empresa."
+      },
+      {
+        "titulo": "Decisiones con datos",
+        "texto": "Analizamos tus datos y te damos previsiones claras sobre ventas, stock o demanda."
+      }
+    ]
+  },
+
+  "pasos": {
+    "titulo": "Cómo funciona",
+    "lista": [
+      {
+        "titulo": "Nos cuentas qué necesitas",
+        "texto": "Una llamada gratuita para entender tu negocio y qué te haría ganar tiempo."
+      },
+      {
+        "titulo": "Lo construimos por ti",
+        "texto": "Diseñamos la solución y la integramos con las herramientas que ya usas."
+      },
+      {
+        "titulo": "Tú solo lo usas",
+        "texto": "Nos encargamos del mantenimiento y las mejoras. Tú no tienes que tocar nada."
+      }
+    ]
+  }
 }
