@@ -1,14 +1,17 @@
 <main class="page">
   <section class="hero">
     @if (logoVisible()) {
-      <img
-        class="hero__logo"
-        [src]="site.logoPath"
-        [alt]="site.logoAlt"
-        width="72"
-        height="72"
-        (error)="logoVisible.set(false)"
-      />
+      <picture>
+        <source [srcset]="site.logoDarkPath" media="(prefers-color-scheme: dark)" />
+        <img
+          class="hero__logo"
+          [src]="site.logoPath"
+          [alt]="site.logoAlt"
+          width="72"
+          height="72"
+          (error)="logoVisible.set(false)"
+        />
+      </picture>
     }
 
     <h1 class="hero__title">{{ site.name }}</h1>

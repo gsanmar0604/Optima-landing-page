@@ -15,8 +15,9 @@ export const SITE = {
     .map((parrafo) => parrafo.trim())
     .filter((parrafo) => parrafo.length > 0),
 
-  // Ruta RELATIVA al logo, dentro de la carpeta public/ (public/images/logo.svg).
-  // Sin barra inicial. Sirve cualquier formato: svg, png, webp...
-  logoPath: 'images/logo.svg',
+  // Rutas RELATIVAS al logo, dentro de la carpeta public/. Sin barra inicial.
+  // La versión "reversed" es la del kit de marca para fondos oscuros (modo oscuro).
+  logoPath: 'images/optima-mark.svg',
+  logoDarkPath: 'images/optima-mark-reversed.svg',
   logoAlt: 'Logotipo de Optima',
 };

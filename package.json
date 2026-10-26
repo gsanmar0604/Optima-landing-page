@@ -9,7 +9,7 @@
     "build": "ng build",
     "prewatch": "node scripts/generate-env.mjs",
     "watch": "ng build --watch --configuration development",
-    "deploy": "npm run build && npx --yes firebase-tools deploy --only hosting"
+    "deploy": "npm run build && npx --yes firebase-tools@15.34.1 deploy --only hosting"
   },
   "private": true,
   "packageManager": "npm@10.9.9",

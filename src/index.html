@@ -6,19 +6,28 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Optima: estamos construyendo algo mejor. Descubre quiénes somos y escríbenos.">
-  <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0d100f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d18" media="(prefers-color-scheme: dark)">
 
   <!-- Open Graph: cómo se ve el enlace al compartirlo por WhatsApp, LinkedIn, etc. -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Optima">
   <meta property="og:description" content="Estamos construyendo algo mejor. Descubre quiénes somos y escríbenos.">
-  <!-- TODO cuando tengáis dominio: og:image necesita una URL ABSOLUTA, p. ej.
-  <meta property="og:image" content="https://tudominio.com/images/og.png">
-  <meta property="og:url" content="https://tudominio.com/"> -->
-  <meta name="twitter:card" content="summary">
+  <!-- og:image necesita una URL ABSOLUTA. Ahora apunta al dominio por defecto de Firebase;
+  cambiadlo cuando tengáis dominio propio. -->
+  <meta property="og:image" content="https://optima-landing-page.web.app/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://optima-landing-page.web.app/">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
   <app-root></app-root>

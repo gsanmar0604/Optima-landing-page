@@ -20,8 +20,10 @@
 
 .hero__title {
   margin: 0;
+  /* Sora es la tipografía del logotipo. */
+  font-family: 'Sora', ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(3.75rem, 17vw, 9.5rem);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 0.9;
   letter-spacing: -0.055em;
 }

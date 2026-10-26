@@ -1,19 +1,20 @@
 :root {
   color-scheme: light dark;
-  --bg: #f7f6f2;
-  --fg: #15171a;
-  --on-fg: #f7f6f2;
-  --muted: #5d636c;
-  --accent: #0b6b4f;
+  /* Colores del kit de marca: Ink #0F1222, Optima Blue #3A5BFF, Light Blue #7D93FF (solo fondos oscuros). */
+  --bg: #f6f7fb;
+  --fg: #0f1222;
+  --on-fg: #f6f7fb;
+  --muted: #5a6075;
+  --accent: #3a5bff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d100f;
-    --fg: #f1f3ef;
-    --on-fg: #0d100f;
-    --muted: #9aa29c;
-    --accent: #5fd3a1;
+    --bg: #0b0d18;
+    --fg: #f1f3fa;
+    --on-fg: #0b0d18;
+    --muted: #9aa0b5;
+    --accent: #7d93ff;
   }
 }
 
