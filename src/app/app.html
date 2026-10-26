@@ -1,0 +1,38 @@
+<main class="page">
+  <section class="hero">
+    @if (logoVisible()) {
+      <img
+        class="hero__logo"
+        [src]="site.logoPath"
+        [alt]="site.logoAlt"
+        width="72"
+        height="72"
+        (error)="logoVisible.set(false)"
+      />
+    }
+
+    <h1 class="hero__title">{{ site.name }}</h1>
+
+    @if (site.tagline) {
+      <p class="hero__tagline">{{ site.tagline }}</p>
+    }
+
+    <div class="hero__body">
+      @for (parrafo of site.paragraphs; track $index) {
+        <p class="hero__text">{{ parrafo }}</p>
+      }
+    </div>
+
+    <div class="hero__contact">
+      <div class="hero__actions">
+        <a class="button" [href]="mailto">Escríbenos</a>
+        <button type="button" class="button button--ghost" aria-live="polite" (click)="copyEmail()">
+          {{ copied() ? '¡Copiado!' : 'Copiar correo' }}
+        </button>
+      </div>
+      <p class="hero__email">{{ email }}</p>
+    </div>
+  </section>
+
+  <footer class="footer">© {{ year }} {{ site.name }}</footer>
+</main>
