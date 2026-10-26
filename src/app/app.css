@@ -7,14 +7,16 @@
 
 .hero {
   align-self: center;
+  justify-self: center;
   max-width: 46rem;
+  text-align: center;
 }
 
 .hero__logo {
   display: block;
   width: 4.5rem;
   height: 4.5rem;
-  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0 auto clamp(1.5rem, 4vw, 2.5rem);
   object-fit: contain;
 }
 
@@ -37,7 +39,7 @@
 }
 
 .hero__text {
-  margin: 1rem 0 0;
+  margin: 1rem auto 0;
   max-width: 36rem;
   font-size: clamp(1.0625rem, 2.4vw, 1.1875rem);
   color: var(--muted);
@@ -50,6 +52,7 @@
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
 }
 
@@ -99,6 +102,7 @@
 
 .footer {
   padding-top: 2rem;
+  text-align: center;
   font-size: 0.8125rem;
   color: var(--muted);
 }
